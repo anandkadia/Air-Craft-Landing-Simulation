@@ -1,0 +1,4 @@
+Anand Kadia - Develop Code for computeSimulationState()
+Mahesh Biyyala - Develope Code for DisplayController()
+Upasana Ajbani - JaCoCo and JUnit
+Liwanshi Raheja - Presentation
