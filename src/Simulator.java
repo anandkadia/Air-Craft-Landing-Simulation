@@ -2,6 +2,7 @@ import java.io.*;
 
 class Simulator
 {
+	static int totalFailedOutput = 0;
 	public static void main(String args[])
 	{
 		// Array to Store Test-Case Data
@@ -62,7 +63,7 @@ class Simulator
 	{
 		
 		int displayScenario = 99;
-		int totalFailedOutput = 0;
+		
 		// Conditions to decide display scenario
 		System.out.println(testCaseNumber+" "+expectedScenario+" "+speed+" "+gearDown+" "
 							+altitude+" "+time+" "+gearNotDownAlarm+" "+gearAirSpeedAlarm+" "
@@ -73,7 +74,7 @@ class Simulator
 			 displayScenario = 1;
 			 if(displayScenario != expectedScenario)
 			 {
-				 System.out.println("Output Scenario is different than expected!);
+				 System.out.println("Output Scenario is different than expected!");
 				 totalFailedOutput++;
 			 }
 		 }
@@ -82,7 +83,7 @@ class Simulator
 			 displayScenario = 2;
 			 if(displayScenario != expectedScenario)
 			 {
-				 System.out.println("Output Scenario is different than expected!);
+				 System.out.println("Output Scenario is different than expected!");
 				 totalFailedOutput++;
 			 }
 		 }
@@ -91,7 +92,7 @@ class Simulator
 			 displayScenario = 3;
 			 if(displayScenario != expectedScenario)
 			 {
-				 System.out.println("Output Scenario is different than expected!);
+				 System.out.println("Output Scenario is different than expected!");
 				 totalFailedOutput++;
 			 }
 		 }
@@ -100,7 +101,7 @@ class Simulator
 			 displayScenario = 4;
 			 if(displayScenario != expectedScenario)
 			 {
-				 System.out.println("Output Scenario is different than expected!);
+				 System.out.println("Output Scenario is different than expected!");
 				 totalFailedOutput++;
 			 }
 		 }
@@ -109,7 +110,7 @@ class Simulator
 			 displayScenario = 5;
 			 if(displayScenario != expectedScenario)
 			 {
-				 System.out.println("Output Scenario is different than expected!);
+				 System.out.println("Output Scenario is different than expected!");
 				 totalFailedOutput++;
 			 }
 		 }
@@ -118,7 +119,7 @@ class Simulator
 			 displayScenario = 6;
 			 if(displayScenario != expectedScenario)
 			 {
-				 System.out.println("Output Scenario is different than expected!);
+				 System.out.println("Output Scenario is different than expected!");
 				 totalFailedOutput++;
 			 }
 		 }
@@ -127,7 +128,7 @@ class Simulator
 			 displayScenario = 7;
 			 if(displayScenario != expectedScenario)
 			 {
-				 System.out.println("Output Scenario is different than expected!);
+				 System.out.println("Output Scenario is different than expected!");
 				 totalFailedOutput++;
 			 }
 		 }
@@ -136,7 +137,7 @@ class Simulator
 			 displayScenario = 8;
 			 if(displayScenario != expectedScenario)
 			 {
-				 System.out.println("Output Scenario is different than expected!);
+				 System.out.println("Output Scenario is different than expected!");
 				 totalFailedOutput++;
 			 }
 		 }
