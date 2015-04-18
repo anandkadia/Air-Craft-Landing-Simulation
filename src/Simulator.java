@@ -61,11 +61,85 @@ class Simulator
 			boolean gearUpCommand) 
 	{
 		
+		int displayScenario = 99;
+		int totalFailedOutput = 0;
 		// Conditions to decide display scenario
 		System.out.println(testCaseNumber+" "+expectedScenario+" "+speed+" "+gearDown+" "
 							+altitude+" "+time+" "+gearNotDownAlarm+" "+gearAirSpeedAlarm+" "
 							+airBrakeWarning+" "+gearOverrideWarning+" "+gearUpCommand);
 		
+		 if(gearNotDownAlarm == true && gearAirSpeedAlarm == false && airBrakeWarning == true && gearOverrideWarning == false && gearUpCommand == false)
+		 {
+			 displayScenario = 1;
+			 if(displayScenario != expectedScenario)
+			 {
+				 System.out.println("Output Scenario is different than expected!);
+				 totalFailedOutput++;
+			 }
+		 }
+		 else if(gearNotDownAlarm == false && gearAirSpeedAlarm == true && airBrakeWarning == true && gearOverrideWarning == true && gearUpCommand == true)
+		 {
+			 displayScenario = 2;
+			 if(displayScenario != expectedScenario)
+			 {
+				 System.out.println("Output Scenario is different than expected!);
+				 totalFailedOutput++;
+			 }
+		 }
+		 else if(gearNotDownAlarm == true && gearAirSpeedAlarm == false && airBrakeWarning == false && gearOverrideWarning == false && gearUpCommand == false)
+		 {
+			 displayScenario = 3;
+			 if(displayScenario != expectedScenario)
+			 {
+				 System.out.println("Output Scenario is different than expected!);
+				 totalFailedOutput++;
+			 }
+		 }
+		 else if(gearNotDownAlarm == false && gearAirSpeedAlarm == true && airBrakeWarning == false && gearOverrideWarning == true && gearUpCommand == true)
+		 {
+			 displayScenario = 4;
+			 if(displayScenario != expectedScenario)
+			 {
+				 System.out.println("Output Scenario is different than expected!);
+				 totalFailedOutput++;
+			 }
+		 }
+		 else if(gearNotDownAlarm == false && gearAirSpeedAlarm == true && airBrakeWarning == true && gearOverrideWarning == false && gearUpCommand == false)
+		 {
+			 displayScenario = 5;
+			 if(displayScenario != expectedScenario)
+			 {
+				 System.out.println("Output Scenario is different than expected!);
+				 totalFailedOutput++;
+			 }
+		 }
+		 else if(gearNotDownAlarm == false && gearAirSpeedAlarm == true && airBrakeWarning == false && gearOverrideWarning == false && gearUpCommand == false)
+		 {
+			 displayScenario = 6;
+			 if(displayScenario != expectedScenario)
+			 {
+				 System.out.println("Output Scenario is different than expected!);
+				 totalFailedOutput++;
+			 }
+		 }
+		 else if(gearNotDownAlarm == false && gearAirSpeedAlarm == false && airBrakeWarning == true && gearOverrideWarning == false && gearUpCommand == false)
+		 {
+			 displayScenario = 7;
+			 if(displayScenario != expectedScenario)
+			 {
+				 System.out.println("Output Scenario is different than expected!);
+				 totalFailedOutput++;
+			 }
+		 }
+		 else if(gearNotDownAlarm == false && gearAirSpeedAlarm == false && airBrakeWarning == false && gearOverrideWarning == false && gearUpCommand == false)
+		 {
+			 displayScenario = 8;
+			 if(displayScenario != expectedScenario)
+			 {
+				 System.out.println("Output Scenario is different than expected!);
+				 totalFailedOutput++;
+			 }
+		 }
 		
 	}
 
