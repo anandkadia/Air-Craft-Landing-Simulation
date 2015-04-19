@@ -41,15 +41,14 @@ class Simulator
 				airBrakeWarning = true;
 			
 			boolean gearOverrideWarning = false;
-			//if(testcases[i][10].equals("X"))
-			//	gearOverrideWarning = true;
+			if(testcases[i][10].equals("X"))
+				gearOverrideWarning = true;
 			
 			boolean gearUpCommand = false;
-			//if(testcases[i][11].equals("X"))
-				//gearUpCommand = true;
+			if(testcases[i][11].equals("X"))
+				gearUpCommand = true;
 			
 			computeSimulationState(testCaseNumber, expectedScenario, speed, gearDown, altitude, time, gearNotDownAlarm, gearAirSpeedAlarm, airBrakeWarning, gearOverrideWarning, gearUpCommand);
-			//System.out.print(testcases[i][j]+"\t");
 		}
 		System.out.println();
 	}
@@ -65,9 +64,9 @@ class Simulator
 		int displayScenario = 99;
 		
 		// Conditions to decide display scenario
-		System.out.println(testCaseNumber+" "+expectedScenario+" "+speed+" "+gearDown+" "
-							+altitude+" "+time+" "+gearNotDownAlarm+" "+gearAirSpeedAlarm+" "
-							+airBrakeWarning+" "+gearOverrideWarning+" "+gearUpCommand);
+		System.out.println(testCaseNumber+"\t"+expectedScenario+"\t"+speed+"\t"+gearDown+"\t"
+							+altitude+"\t"+time+"\t"+gearNotDownAlarm+"\t"+gearAirSpeedAlarm+"\t"
+							+airBrakeWarning+"\t"+gearOverrideWarning+"\t"+gearUpCommand);
 		
 		 if(gearNotDownAlarm == true && gearAirSpeedAlarm == false && airBrakeWarning == true && gearOverrideWarning == false && gearUpCommand == false)
 		 {
